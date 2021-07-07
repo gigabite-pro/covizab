@@ -1,0 +1,46 @@
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.main-illus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 99vw;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 8vw;
+    width: 100%;
+    padding-top: 0vw;
+}
+
+nav img {
+    width: 15vw;
+    height: auto;
+    margin-left: 5vw;
+}
+
+.nav-links {
+    width: 60vw;
+    position: absolute;
+    right: 0;
+    margin-right: -6vw;
+}
+
+.nav-links a {
+    font-family: 'Airbnb Cereal App';
+    font-weight: 500;
+    font-size: 1.4vw;
+    margin-right: 4vw;
+    text-decoration: underline;
+}
