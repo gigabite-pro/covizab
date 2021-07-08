@@ -10,21 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet"> 
     <link href="https://fonts.cdnfonts.com/css/airbnb-cereal-app" rel="stylesheet">
     <link rel="icon" href="/assets/covizab-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Covizab</title>
 </head>
 <body>
     <img src="/assets/bg-illus.png" class="main-illus">
     <nav>
         <div>
-            <img src="/assets/covizab-logo3.png">
+            <a href="/">
+                <img src="/assets/covizab-logo3.png">
+            </a>
         </div>
         <div class="nav-links">
-            <a>About</a>
-            <a>Pricing</a>
-            <a>Features</a>
-            <a>Feedback</a>
-            <a>Team</a>
-            <a>FAQ</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#pricing">Features</a>
+            <a href="#pricing">Feedback</a>
+            <a href="#pricing">Team</a>
+            <a href="#pricing">FAQ</a>
         </div>
     </nav>
     <div id="home">
@@ -35,17 +38,17 @@
                 Revolutionizing the <br> world with each jab
             </h4>
             <hr style="margin-top: 0.8rem;">
-            <a href="#">
+            <a href="#pricing">
                 <button class="btn">Book a slot</button>
             </a>
         </div>
     </div>
-    <div id="about">
-        <div class="about-content">
+    <div id="about-wrapper">
+        <div class="about-content" id="about">
             <h1 class="head">
                 About
             </h1>
-            <hr style="width: 25%; height: 0.1rem; border: none; background-color: #707070;">
+            <hr class="head-hr">
             <div class="about-small">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, earum. Delectus labore beatae ab pariatur neque, necessitatibus
             </div>
@@ -89,11 +92,11 @@
             </div>
         </div>
     </div>
-    <div id="pricing">
-        <h1 class="head">
+    <div id="pricing-wrapper">
+        <h1 class="head" id="pricing">
             Pricing
         </h1>
-        <hr style="width: 25%; height: 0.1rem; border: none; background-color: #707070;">
+        <hr class="pricing-head-hr">
         <div class="pricing-content">
             <div class="pricing-card">
                 <div class="pricing-card-head">
@@ -107,7 +110,9 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident sequi, commodi quod at cupiditate temporibus quasi praesentium, vel illo pariatur fugit. Cupiditate accusamus rerum et assumenda quia, porro nobis.
                 </div>
                 <div class="get">
-                    <button class="btn price-btn">Get &nbsp; ></button>
+                    <a href="#pricing">
+                        <button class="btn price-btn">Get &nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
+                    </a>
                 </div>
             </div>
             <div class="pricing-card pricing-center">
@@ -122,7 +127,9 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident sequi, commodi quod at cupiditate temporibus quasi praesentium, vel illo pariatur fugit. Cupiditate accusamus rerum et assumenda quia, porro nobis.
                 </div>
                 <div class="get">
-                    <button class="btn price-btn">Get &nbsp; ></button>
+                    <a href="#pricing">
+                        <button class="btn price-btn">Get &nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
+                    </a>
                 </div>
             </div>
             <div class="pricing-card">
@@ -137,7 +144,9 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident sequi, commodi quod at cupiditate temporibus quasi praesentium, vel illo pariatur fugit. Cupiditate accusamus rerum et assumenda quia, porro nobis.
                 </div>
                 <div class="get">
-                    <button class="btn price-btn">Get &nbsp; ></button>
+                    <a href="#pricing">
+                        <button class="btn price-btn">Get &nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
+                    </a>
                 </div>
             </div>
         </div>

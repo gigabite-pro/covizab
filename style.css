@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: auto;
     overflow-x: hidden;
@@ -10,6 +14,7 @@ body {
     right: 0;
     left: 0;
     width: 99vw;
+    z-index: -999;
 }
 
 nav {
@@ -44,6 +49,11 @@ nav img {
     font-size: 1.4vw;
     margin-right: 4vw;
     text-decoration: underline;
+    color: black
+}
+
+.nav-links a:hover {
+    color: #026670;
 }
 
 #home{
@@ -61,14 +71,14 @@ nav img {
 .main-head{
     font-family: 'Airbnb Cereal App';
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 4.4vw;
     position: relative;
     margin-bottom: 0rem;
     margin-left: 0.3rem;
 }
 
 .tagline{
-    font-size: 1.7rem;
+    font-size: 2.15vw;
     font-weight: lighter;
     margin: 0.5rem;
     opacity: 60%;
@@ -81,7 +91,7 @@ nav img {
     padding: 0.5rem 1.5rem;
     color: white;
     font-family: 'Lexend Deca';
-    font-size: 0.9rem;
+    font-size: 1.15vw;
     margin-top: 0.4rem;
     margin-left: 0.5rem;
 }
@@ -90,9 +100,8 @@ nav img {
     cursor: pointer;
 }
 
-#about{
+#about-wrapper {
     margin-top: 7rem;
-    margin-bottom: 10rem;
     background-color: #fafafac9;
     height: 90vh;
     width: 100%;
@@ -100,7 +109,6 @@ nav img {
     transform: skewY(-5deg) scale(1.05);
     z-index: -100;
 }
-
 
 .about-content{
     transform: skewY(5deg);
@@ -111,13 +119,25 @@ nav img {
 .head{
     color: #026670;
     text-align: center;
+    font-size: 3.3vw;
+    font-weight: 700;
+    font-family: 'Airbnb Cereal App';
+}
+
+.head-hr {
+    width: 20vw; 
+    height: 0.15vw; 
+    border: none; 
+    background-color: #707070;
+    margin-top: -2vw;
+    margin-bottom: 1.5vw;
 }
 
 .about-small{
-    width: 45%;
+    width: 47%;
     margin: auto;
-    font-size: 1.1rem;
-    color: #026670;
+    font-size: 1.4vw;
+    color: #7fafb4;
 }
 
 .about-cards-container{
@@ -127,7 +147,8 @@ nav img {
 }
 
 .about-card{
-    height: 78vh;
+    height: fit-content;
+    padding-bottom: 1vw;
     width: 23vw;
     border-radius: 15px;
     background-color: white;
@@ -136,14 +157,13 @@ nav img {
 
 .about-card-head{
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     color: #707070;
-    opacity: 60%;
 }
 
 .about-card-content{
     padding: 0.5rem 2rem;
-    font-size: 12.8px;
+    font-size: 1vw;
     text-align: left;
     color: #707070;
     opacity: 70%;
@@ -153,10 +173,19 @@ nav img {
     width: 85%;
     height: 25vh;
     margin: 1rem auto;
+    margin-top: 2vw;
     background: url('/assets/about_illus.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#pricing-wrapper {
+    padding-top: 7rem;
+}
+
+#pricing {
+    padding-top: 2rem;
 }
 
 .pricing-content{
@@ -165,13 +194,26 @@ nav img {
     justify-content: center;
 }
 
+.pricing-head-hr {
+    width: 20vw; 
+    height: 0.15vw; 
+    border: none; 
+    background-color: #707070;
+    margin-top: -1.5vw;
+    margin-bottom: 4vw;
+}
+
 .pricing-card{
-    height: 65vh;
+    height: fit-content;
+    padding-bottom: 2vw;
     width: 24vw;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
+
 .pricing-center{
     margin: 0rem 1.5rem;
 }
@@ -179,13 +221,13 @@ nav img {
 .pricing-card-head{
     padding-top: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.9vw;
     color: #707070;
 }
 
 .amount{
     margin: 2rem 0rem;
-    font-size: 2.5rem;
+    font-size: 3.1vw;
     font-weight: 900;
     text-align: center;
     color: #525151;
@@ -193,7 +235,7 @@ nav img {
 
 .pricing-card-content{
     padding: 0.5rem 3.5rem;
-    font-size: 12.8px;
+    font-size: 1vw;
     text-align: left;
     color: #707070;
     opacity: 70%;
@@ -201,6 +243,7 @@ nav img {
 
 .get{
     margin-top: 1rem;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
 }
