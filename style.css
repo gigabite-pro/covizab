@@ -4,6 +4,8 @@ html {
 
 body {
     height: auto;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     font-family: 'Lexend Deca'
 }
@@ -73,14 +75,14 @@ nav img {
     font-weight: 700;
     font-size: 4.4vw;
     position: relative;
-    margin-bottom: 0rem;
-    margin-left: 0.3rem;
+    margin-bottom: 0vw;
+    margin-left: 0.3vw;
 }
 
 .tagline{
     font-size: 2.15vw;
     font-weight: lighter;
-    margin: 0.5rem;
+    margin: 0.5vw;
     opacity: 60%;
 }
 
@@ -88,12 +90,12 @@ nav img {
     border: none;
     border-radius: 6px;
     background-color: #026670;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5vw 1.5vw;
     color: white;
     font-family: 'Lexend Deca';
     font-size: 1.15vw;
-    margin-top: 0.4rem;
-    margin-left: 0.5rem;
+    margin-top: 0.4vw;
+    margin-left: 0.5vw;
 }
 
 .btn:hover{
@@ -101,11 +103,11 @@ nav img {
 }
 
 #about-wrapper {
-    margin-top: 7rem;
+    margin-top: 7vw;
     background-color: #fafafac9;
     height: 90vh;
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 3vw 1vw;
     transform: skewY(-5deg) scale(1.05);
     z-index: -100;
 }
@@ -143,7 +145,7 @@ nav img {
 .about-cards-container{
     display: flex;
     justify-content: space-evenly;
-    padding: 3rem 0rem;
+    padding: 3vw 0vw;
 }
 
 .about-card{
@@ -152,17 +154,17 @@ nav img {
     width: 23vw;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 .5vw 1vw rgba(0,0,0,.15);
 }
 
 .about-card-head{
-    padding-top: 1rem;
+    padding-top: 1vw;
     font-size: 1.5vw;
     color: #707070;
 }
 
 .about-card-content{
-    padding: 0.5rem 2rem;
+    padding: 0.5vw 2vw;
     font-size: 1vw;
     text-align: left;
     color: #707070;
@@ -172,7 +174,7 @@ nav img {
 .illus{
     width: 85%;
     height: 25vh;
-    margin: 1rem auto;
+    margin: 1vw auto;
     margin-top: 2vw;
     background: url('/assets/about_illus.png');
     background-size: contain;
@@ -181,15 +183,16 @@ nav img {
 }
 
 #pricing-wrapper {
-    padding-top: 7rem;
+    padding-top: 10vw;
+    height: 100vh;
 }
 
 #pricing {
-    padding-top: 2rem;
+    padding-top: 2vw;
 }
 
 .pricing-content{
-    margin-top: 3rem;
+    margin-top: 3vw;
     display: flex;
     justify-content: center;
 }
@@ -209,24 +212,24 @@ nav img {
     width: 24vw;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 .5vw 1vw rgba(0,0,0,.15);
     margin-right: 2vw;
     margin-left: 2vw;
 }
 
 .pricing-center{
-    margin: 0rem 1.5rem;
+    margin: 0vw 1.5vw;
 }
 
 .pricing-card-head{
-    padding-top: 1rem;
+    padding-top: 1vw;
     text-align: center;
     font-size: 1.9vw;
     color: #707070;
 }
 
 .amount{
-    margin: 2rem 0rem;
+    margin: 2vw 0vw;
     font-size: 3.1vw;
     font-weight: 900;
     text-align: center;
@@ -234,7 +237,7 @@ nav img {
 }
 
 .pricing-card-content{
-    padding: 0.5rem 3.5rem;
+    padding: 0.5vw 3.5vw;
     font-size: 1vw;
     text-align: left;
     color: #707070;
@@ -242,8 +245,107 @@ nav img {
 }
 
 .get{
-    margin-top: 1rem;
+    margin-top: 1vw;
     font-size: 2vw;
     display: flex;
     justify-content: center;
+}
+
+#features-wrapper{
+    height: 120vh;
+    width: 100vw;
+    margin-top: 15vh;
+    position: relative;
+    background-color: #026670;
+}
+
+.skew{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: -16vh;
+    left: 0;
+    background-color: #026670;
+    transform: skewY(-5deg);
+}
+
+.left-aligned-head{
+    width: 20vw;
+    margin-left: 5.2vw;
+    padding-top: 5vh;
+}
+
+#features{
+    color: white;
+    text-align: left;
+}
+
+.features-head-hr{
+    width: 20vw; 
+    height: 0.15vw; 
+    border: none; 
+    background-color: white;
+    margin-top: -1.5vw;
+    margin-bottom: 4vw;
+}
+
+.features-main{
+    display: flex;
+    margin-top: -3vw;
+}
+
+.features-left{
+    width: 30vw;
+    height: 110vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.features-right{
+    height: 110vh;
+    width: 69vw;
+    background-image: url('/assets/laptop.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.features-card{
+    height: 14vh;
+    width: 23vw;
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.7vw 1vw;
+}
+
+.features-card-head{
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+.features-card-content{
+    font-size: 0.9vw;
+    margin-top: 0.4vw;
+    font-family: 'Lexend Deca';
+    color: #707070;
+}
+
+.inactive div{
+    color: #7070706e;
+}
+
+.inactive::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    z-index: 1;
+    height: 17.1vh;
+    width: 25vw;
+    background-color: #02677070;
 }
