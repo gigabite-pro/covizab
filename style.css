@@ -349,3 +349,124 @@ nav img {
     width: 25vw;
     background-color: #02677070;
 }
+
+.feedback-wrapper {
+    margin-top: 20vw;
+    margin-left: 7vw;
+    width: 84vw;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: 0 .5vw 1vw rgba(0,0,0,.15);
+}
+
+.feedback-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+.feedback-left {
+    width: 40%;
+    text-align: center;
+    padding-right: 3%;
+    border-right: 3px solid #b4b4b4;
+    height: 95vh;
+}
+
+.feedback-right {
+    padding-left: 6%;
+    height: 95vh;
+    width: 50%;
+}
+
+.feedback-left h1 {
+    color: #026670;
+    text-align: center;
+    font-size: 3.3vw;
+    font-weight: 700;
+    font-family: 'Airbnb Cereal App';
+}
+
+.feedback-left hr {
+    width: 15vw; 
+    height: 0.17vw; 
+    border: none; 
+    background-color: #026670;
+    margin-top: -2.6vw;
+    margin-bottom: 3vw;
+}
+
+.feedback-left p {
+    padding: 0.5vw 2vw;
+    font-size: 1vw;
+    text-align: left;
+    color: #707070;
+    opacity: 70%;
+    word-break: break-all;
+}
+
+.feedback-right h3 {
+    color: #999999;
+    font-weight: 450;
+    font-size: 1.8vw;
+    font-family: 'Airbnb Cereal App';
+    margin-bottom: 0.5vw;
+}
+
+.feedback-right input {
+    height: 2vw;
+    width: 30vw;
+    border: none;
+    border-radius: 7px;
+    padding-left: 1.1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    background: #ececec;
+    font-family: Lexend Deca;
+    font-size: 1vw;
+}
+
+.feedback-right input:focus {
+    outline: none;
+}
+
+.feedback-right textarea {
+    resize: none;
+    height: 12vw;
+    width: 30vw;
+    border: none;
+    border-radius: 7px;
+    padding-left: 1.1vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    background: #ececec;
+    font-family: Lexend Deca;
+    font-size: 1vw;
+    color: black;
+}
+
+.feedback-right textarea:focus {
+    outline: none;
+}
+
+.feedback-right .stars {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.feedback-right .stars i {
+    font-size: 2.5vw;
+    margin-right: 0.7vw;
+    color: #ececec;
+}
+
+.feedback-right .stars i:hover {
+    cursor: pointer;
+}
+
+#selected {
+    color: #f8df87;
+}
