@@ -104,13 +104,16 @@ nav img {
 }
 
 .jai-ka-3d{
-    width: 40vw;
-    height: 40vw;
-    padding-right: 10vw;
-    background: url('/assets/injection-3D.png');
+    width: 30vw;
+    height: 30vw;
+    margin-top: 10vh;
+    padding-right: 30vw;
+    background: url('/assets/injection-illus.png');
     background-position: center;
     background-size: contain;
-    transform: rotate(25deg);
+    background-repeat: no-repeat;
+    opacity: 80%;
+    z-index: -1;
 }
 
 #about-wrapper {
@@ -182,16 +185,28 @@ nav img {
     opacity: 70%;
 }
 
+.about-1{
+    background: url('/assets/about_illus.png');
+}
+
+.about-2{
+    background: url('/assets/about-illus-2.png');
+}
+
+.about-3{
+    background: url('/assets/about-illus-3.png');
+}
+
 .illus{
     width: 85%;
     height: 25vh;
     margin: 1vw auto;
     margin-top: 2vw;
-    background: url('/assets/about_illus.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 #pricing-wrapper {
     padding-top: 10vw;
@@ -384,7 +399,7 @@ nav img {
 }
 
 .feedback-left {
-    width: 40%;
+    width: 30vw;
     text-align: center;
     padding-right: 3%;
     border-right: 3px solid #b4b4b4;
@@ -416,11 +431,10 @@ nav img {
 
 .feedback-left p {
     padding: 0.5vw 2vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: left;
     color: #707070;
     opacity: 70%;
-    word-break: break-all;
 }
 
 .feedback-right h3 {
@@ -523,7 +537,6 @@ nav img {
     height: 18vw;
     width: 18vw;
     border-radius: 12px;
-    border: 2px solid #ebe8e8be;
     margin: auto;
     background-position: center;
     background-size: contain;
@@ -593,6 +606,11 @@ nav img {
     display: flex;
     align-items: center;
     transition: height 0.2s ease-out;
+}
+
+.panel p{
+    width: 90%;
+    margin-left: 2vw;
 }
 
 #footer{
