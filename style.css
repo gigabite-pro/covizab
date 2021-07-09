@@ -481,7 +481,7 @@ nav img {
     padding-bottom: 0.9vw;
     padding-top: 0.9vw ;
     width: 20vw;
-    border-radius: 15px;
+    border-radius: 0.9vw;
     background-color: white;
     box-shadow: 0 .5vw 1vw rgba(0,0,0,.15);
     margin-right: 2vw;
@@ -501,7 +501,7 @@ nav img {
 }
 
 .img4{
-    background: url('https://github.com/gigabite-pro.png');
+    background: url('https://github.com/MannatTuli.png');
 }
 
 .image-container{
