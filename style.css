@@ -470,3 +470,122 @@ nav img {
 #selected {
     color: #f8df87;
 }
+
+.team-cards-container{
+    display: flex;
+    justify-content: center;
+}
+
+.team-card{
+    height: fit-content;
+    padding-bottom: 0.9vw;
+    padding-top: 0.9vw ;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 .5vw 1vw rgba(0,0,0,.15);
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.img1{
+    background: url('https://github.com/gigabite-pro.png');
+}
+
+.img2{
+    background: url('https://github.com/sheldor1510.png');
+}
+
+.img3{
+    background: url('https://github.com/jai-17.png');
+}
+
+.img4{
+    background: url('https://github.com/gigabite-pro.png');
+}
+
+.image-container{
+    height: 18vw;
+    width: 18vw;
+    border-radius: 12px;
+    border: 2px solid #ebe8e8be;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+}
+
+.team-info{
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+.post{
+    color: #707070;
+}
+
+#faqyou-wrapper{
+    margin-top: 25vh;
+    width: 100vw;
+    background-color: #026670;
+    padding-top: 0.1vh;
+    padding-bottom: 2vw;
+}
+
+.faq-head{
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+}
+
+.faq-head-hr{
+    width: 90vw; 
+    height: 0.15vw; 
+    border: none; 
+    background-color: white;
+    margin-top: -0.5vw;
+    margin-bottom: 4vw;
+}
+
+.ques-container{
+    width: 70vw;
+    margin: auto;
+    background-color: #16B2C2;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.8vh 4vw;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.ques-container:hover{
+    cursor: pointer;
+}
+
+.accordion{
+    transition: transform 0.2s ease-out;
+}
+  
+.panel {
+    padding:0 4vw;
+    font-size: 1.2vw;
+    background-color: #16B2C2;
+    color: white;
+    height: 0;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 2vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: height 0.2s ease-out;
+}
+
+#footer{
+    padding: 3vw 0vh;
+    background-color: #16B2C2;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

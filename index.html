@@ -14,7 +14,7 @@
     <title>Covizab</title>
 </head>
 <body>
-    <img src="/assets/bg-illus.png" class="main-illus">
+    <img src="/assets/bg-illus2.png" class="main-illus">
     <nav>
         <div>
             <a href="/">
@@ -26,8 +26,8 @@
             <a href="#pricing">Pricing</a>
             <a href="#features">Features</a>
             <a href="#feedback">Feedback</a>
-            <a href="#team">Team</a>
-            <a href="#faq">FAQ</a>
+            <a href="#team-wrapper">Team</a>
+            <a href="#faqyou-wrapper">FAQ</a>
         </div>
     </nav>
     <div id="home">
@@ -235,5 +235,154 @@
             </div>
         </div>
     </div>
+    <div id="team-wrapper">
+        <h1 class="head" id="pricing">
+            Team
+        </h1>
+        <hr class="pricing-head-hr">
+        <div class="team-cards-container">
+            <div class="team-card">
+                <div class="image-container img1">
+                </div>
+                <div class="team-info">
+                    <strong>
+                        Vaibhav Sharma
+                    </strong>
+                    <br>
+                    <span class="post">
+                        Web Developer
+                    </span>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-container img2">
+                </div>
+                <div class="team-info">
+                    <strong>
+                        Anshul Saha
+                    </strong>
+                    <br>
+                    <span class="post">
+                        Web Developer
+                    </span>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-container img3">
+                </div>
+                <div class="team-info">
+                    <strong>
+                        Jai Madhukar
+                    </strong>
+                    <br>
+                    <span class="post">
+                        UI/UX Designer
+                    </span>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-container img4">
+                </div>
+                <div class="team-info">
+                    <strong>
+                        Mannat Tuli
+                    </strong>
+                    <br>
+                    <span class="post">
+                        Content Writer
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="faqyou-wrapper">
+        <h1 class="faq-head" id="faq">
+            Frequently Asked Questions (FAQ)
+        </h1>
+        <hr class="faq-head-hr">
+        <div class="faq-content">
+            <div class="ques-container">
+                <div class="faq-ques">
+                    Q. Will you pass JEE this year?
+                </div>
+                <div class="accordion">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="panel">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No!</p>
+            </div>
+            <div class="ques-container">
+                <div class="faq-ques">
+                    Q. Will you pass JEE this year?
+                </div>
+                <div class="accordion">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
+            <div class="ques-container">
+                <div class="faq-ques">
+                    Q. Will you pass JEE this year?
+                </div>
+                <div class="accordion">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
+            <div class="ques-container">
+                <div class="faq-ques">
+                    Q. Will you pass JEE this year?
+                </div>
+                <div class="accordion">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
+            <div class="ques-container">
+                <div class="faq-ques">
+                    Q. Will you pass JEE this year?
+                </div>
+                <div class="accordion">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <i class="far fa-copyright"></i> 2021 Covizab
+        </footer>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("ques-container");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            const arrow = this.children[1]
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.height) {
+                this.style.padding = '3.8vh 4vw'
+                panel.style.height = null;
+                arrow.style.transform = 'rotate(360deg)'
+            } else {
+                this.style.padding = '3.8vh 4vw 0.5vh 4vw'
+                arrow.style.transform = 'rotate(180deg)'
+                panel.style.height = "4.5vw";
+            }
+        });
+        };  
+    </script>
 </body>
 </html>
