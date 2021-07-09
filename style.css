@@ -62,6 +62,7 @@ nav img {
     display: flex;
     height: 100vh;
     align-items: center;
+    justify-content: space-between;
 }
 
 .heading{
@@ -102,6 +103,16 @@ nav img {
     cursor: pointer;
 }
 
+.jai-ka-3d{
+    width: 40vw;
+    height: 40vw;
+    padding-right: 10vw;
+    background: url('/assets/injection-3D.png');
+    background-position: center;
+    background-size: contain;
+    transform: rotate(25deg);
+}
+
 #about-wrapper {
     margin-top: 7vw;
     background-color: #fafafac9;
@@ -136,7 +147,7 @@ nav img {
 }
 
 .about-small{
-    width: 47%;
+    width: 70vw;
     margin: auto;
     font-size: 1.4vw;
     color: #7fafb4;
@@ -527,7 +538,7 @@ nav img {
     color: #707070;
 }
 
-#faqyou-wrapper{
+#faq-wrapper{
     margin-top: 25vh;
     width: 100vw;
     background-color: #026670;

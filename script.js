@@ -45,6 +45,11 @@ const starClick = (id) => {
     }
 }
 
+
 window.onload = () => {
     udpateCards()
+    const submitBtn = document.getElementById('feedback-btn');
+        submitBtn.addEventListener('click', ()=>{
+        alert('Form Submitted')
+    })
 }
