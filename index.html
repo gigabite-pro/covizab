@@ -387,6 +387,9 @@
             <i class="far fa-copyright"></i> 2021 Covizab
         </footer>
     </div>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
     <script>
         var acc = document.getElementsByClassName("ques-container");
         var i;
@@ -409,6 +412,18 @@
             }
         });
         };  
+
+        window.onload = ()=>{
+            const toTop = document.querySelector(".to-top");
+
+            window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+            })
+        };
     </script>
 </body>
 </html>

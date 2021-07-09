@@ -622,3 +622,34 @@ nav img {
     justify-content: center;
     align-items: center;
 }
+
+.to-top {
+    background: #f8d968;
+    background-size: 100%;
+    position: fixed;
+    bottom: 1vw;
+    right:3vw;
+    width:3vw;
+    height:3vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    color: black;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  
+  .to-top:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+  .to-top.active {
+    bottom: 3vw;
+    pointer-events: auto;
+    opacity:1;
+    text-decoration: none;
+  }
