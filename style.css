@@ -647,7 +647,7 @@ nav img {
     cursor: pointer;
   }
 
-  .to-top.active {
+  .to-top.activetop {
     bottom: 3vw;
     pointer-events: auto;
     opacity:1;
