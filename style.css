@@ -322,6 +322,10 @@ nav img {
     padding: 0.7vw 1vw;
 }
 
+.features-card:hover {
+    cursor: pointer;
+}
+
 .features-card-head{
     font-weight: bold;
     font-size: 1.1vw;

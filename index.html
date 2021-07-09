@@ -11,6 +11,7 @@
     <link href="https://fonts.cdnfonts.com/css/airbnb-cereal-app" rel="stylesheet">
     <link rel="icon" href="/assets/covizab-favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
     <title>Covizab</title>
 </head>
 <body>
@@ -161,7 +162,7 @@
             </div>
             <div class="features-main">
                 <div class="features-left">
-                    <div class="features-card">
+                    <div class="features-card" id="f1" onClick="featureClick(this.id)">
                         <div class="features-card-head">
                             Booking
                         </div>
@@ -169,7 +170,7 @@
                             Choose a vaccination according to your age group and then select an available time slot. If no time slot is available you can choose to get notified when one opens up.
                         </div>
                     </div>
-                    <div class="features-card inactive">
+                    <div class="features-card" id="f2" onClick="featureClick(this.id)">
                         <div class="features-card-head">
                             QR Code
                         </div>
@@ -177,7 +178,7 @@
                             You'll get a QR Code once you have paid for a dose. Just show the QR Code and nothing else on vaccination day to get the dose. 
                         </div>
                     </div> 
-                    <div class="features-card inactive">
+                    <div class="features-card" id="f3" onClick="featureClick(this.id)">
                         <div class="features-card-head">
                             Paperless
                         </div>
@@ -185,7 +186,7 @@
                             Your digitally signed vaccination certificate will be mailed to you which you can show anywhere to prove you're vaccinated.
                         </div>
                     </div> 
-                    <div class="features-card inactive">
+                    <div class="features-card" id="f4" onClick="featureClick(this.id)">
                         <div class="features-card-head">
                             Post Vaccination Consultation
                         </div>
@@ -193,7 +194,7 @@
                             Get up to 5 free sessions with our specialized doctors to help you with any problems you face after taking your vaccine. 
                         </div>
                     </div> 
-                    <div class="features-card inactive">
+                    <div class="features-card" id="f5" onClick="featureClick(this.id)">
                         <div class="features-card-head">
                             Vaccination Notification
                         </div>
@@ -225,11 +226,11 @@
                 <h3>Message</h3>
                 <textarea placeholder="Tell us about your experience with us."></textarea>
                 <div class="stars">
-                    <i class="fas fa-star" id="selected"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star s1" onClick="starClick('s1')"></i>
+                    <i class="fas fa-star s2" onClick="starClick('s2')"></i>
+                    <i class="fas fa-star s3" onClick="starClick('s3')"></i>
+                    <i class="fas fa-star s4" onClick="starClick('s4')"></i>
+                    <i class="fas fa-star s5" onClick="starClick('s5')"></i>
                 </div>
                 <button class="btn">Submit</button>
             </div>
